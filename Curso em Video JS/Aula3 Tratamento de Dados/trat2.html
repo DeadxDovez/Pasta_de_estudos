@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+ let n1 = window.prompt('digite o numero?')
+ let n2 = window.prompt('digite outro numero')
+ let s = n1 + n2
+ alert(s)
+// usando assim o prompt devolve uma string, assim o sinal de + é usado para concatenação
+// para fazer a conversão de string para Number usamos.
+
+
+//parseInt => para numeros inteiros
+//parseFloat => para numeros reais
+
+let N1 = parseInt(window.prompt('Digite um numero'))
+let N2 = parseInt( window.prompt('digite outro numero'))
+let S = N1 + N2
+alert(S)
+
+//Também pode utilizar somente Number e deixar para o proprio 
+//JS identificar o numero real ou inteiro
+
+let a1 = Number(window.prompt('Digite um Numero'))
+let a2 = Number( window.prompt('digitie outro numero'))
+let r = a1 + a2
+
+//Dessa forma tanto faz se for um numero real ou inteiro.
+
+//No contrario para converter numero para string usamos:
+
+let t1 = String(6)
+let t2 = String(8)
+
+
+// no caso de uma variável podemos usar 
+//let.t1 = 8
+//t1.toString()
+
+//FORMATANDO STRING
+//para não precisar usar sempre concatenação para chamar uma variavel na string,
+//pode usar a `` para usar o templateString 
+//exemplo:
+let nome = 'Filipe'
+let idade = 31
+let peso = 74
+//exemplo de concatenação 
+alert(nome + 'tem' + idade + 'anos e pesa' + peso + 'kg')
+alert(`${nome} tem ${idade} e pesa ${peso} kg`)
+    </script>
+</body>
+</html>

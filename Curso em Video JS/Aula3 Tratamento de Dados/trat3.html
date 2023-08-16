@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//outros exemplos de formatação de string
+//lenght => monstra a quantidade de caracteres de uma string        
+// toUpperCase() => converte os caracteres para letra Maiuscula
+// toLowerCase() => cpmverte os caracteres para letra minuscula
+
+ let nome = window.prompt('Digite Seu Nome')
+ document.write(`seu nome tem ${nome.length} letras.`) // com o document.write a informação é colocada direto no body
+ document.write(`Ola, ${nome}! o seu nome em letras maiusculas é ${nome.toUpperCase()}`)
+
+// para formatação de numeros usamos os seguintes codigos
+let n1 = 1435.4
+// n1.toFixed(2) // acrescenta o 0 a casa decimal
+// n1.toFixed(2).replace('.',',') // para trocar o ponto pela virgula
+// console.log(n1)
+
+//no caso de formatação para formato monetario usamos
+//n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // converte para valor monetario
+
+    </script>
+</body>
+</html>

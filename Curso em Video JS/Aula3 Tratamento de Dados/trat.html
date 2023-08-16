@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//const => é considerada uma variavel , mas que o valor dentro não é alterado
+//let => é uma variavel que vc pode alterar o valor a qualquer momento.
+
+let nome = window.prompt('qual é seu nome?')
+let retorno = window.confirm(`Então o seu nome é ${nome}?`)
+if (retorno == true){
+
+    if(nome == 'Filipe'){
+    alert(`Seja bem vindo ${nome}`)
+}else{
+    alert('só é permitidos Filipes por aqui meu irmão , VAZA')
+}
+}else{
+    alert('cancelou ô maldito ? então tchau!!!')
+}
+
+    </script>
+</body>
+</html>

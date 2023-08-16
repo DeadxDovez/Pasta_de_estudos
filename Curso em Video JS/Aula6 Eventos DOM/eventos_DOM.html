@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+
+//  EVENTOS DOM 
+//INTERAÇÕES COM MOUSE
+//mouseenter // Quando passa o mouse em cima do item
+//mousemove // quando movimenta o mouse dentro do item
+//mousedown // quando vc clica e segura o botal do mouse
+//mouseup // quando solta o botao do mouse
+//click // quando clica no item
+//mouseout // quando tira o mouse do item
+
+//Funções de javascript
+var a = window.document.getElementById('area')
+a.addEventListener('click', clicar) //com o addEventListener vc pode chamar a função 
+a.addEventListener('mouseenter', entrar)//mais limpa sem precisar sujar seu codigo html
+a.addEventListener('mouseout', saiu)
+function clicar(){
+    a.innerText = 'clicou'
+} //tudo que esta dentro das chaves é chamado de bloco , e so sera disparado apos a ação ser realizada
+function entrar(){
+    a.innerText = 'Entrou'
+
+}
+function saiu(){
+    a.innerText='Saiu'
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+        font: normal 18pt Arial;
+      }
+    </style>
+</head>
+<body>
+    <h1>iniciando Estudos com DOM</h1>
+    <p>aqui é o resultado</p>
+    <div id="dom">
+        Clique em Min
+    </div>
+    <script>
+//DOM
+
+//Dom é a manipulação dentro do navegador ou seja, são aplicações JavaScript
+//que so rodam no navegador.
+
+window // como o nome diz , vc esta selecionando toda a janela da pagina
+windows.document // acessando o documento html
+window.document.getElementsByTagName('p')[0] //Seleciona o objeto dentro de uma tag especifica dentro do html. Os [] são para identificar a posição da tag que deseja selecionar
+//tambem podemos usar colchete para selecionar qual objeto queremos selicionar sendo que 0 seria o primeiro.
+window.document.write() // uma forma simples de joga um texto dentro do documento ( Apesar de não ser a melhor forma de se fazer isso)
+window.document.getElementById()// pega um objeto pelo ID 
+window.document.getElementsByName()[0] // pega o elemento pelo Nome, como podem conter mais itens , usa [] para selecionar qual item vc deseja
+window.document.getElementsByClassName()[0] // pega toda uma classe de objetos.
+window.document.querySelector('div#dom') // Um metodo mais recente para selecionar uma div ou um item do documento.
+
+    </script>
+</body>
+</html>
